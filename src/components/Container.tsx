@@ -164,7 +164,7 @@ export default function Container(props: ContainerProps) {
           </button>
         </div>
         <Link href="/">
-          <span className="text-lg font-semibold">wendo</span>
+          <span className="text-lg font-semibold" style={{ color: "#C65C69" }}>hzerrweckk</span>
         </Link>
 
         {/* Desktop menu */}

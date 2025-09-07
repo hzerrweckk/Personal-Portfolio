@@ -6,34 +6,44 @@
 
 @layer base {
   :root {
-    --background: 240 27.9% 5.7%;
-    --foreground: 210 40% 98%;
+    /* Fondo general */
+    --background: 0 60% 95%;          /* #FADAD9 muy claro */
+    --foreground: 0 0% 100%;          /* blanco puro */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    /* Tarjetas */
+    --card: 0 47% 79%;                /* #E9ABAE */
+    --card-foreground: 0 0% 100%;     /* blanco */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    /* Popovers (ventanas flotantes) */
+    --popover: 0 36% 68%;             /* #D78289 */
+    --popover-foreground: 0 0% 100%;  /* blanco */
 
-    --primary: 237 99% 74%;
-    --primary-foreground: 0 0% 0%;
+    /* Colores principales */
+    --primary: 0 47% 79%;             /* #E9ABAE */
+    --primary-foreground: 0 0% 100%;  /* blanco */
 
-    --secondary: 214.2 98.47% 74.31%;
-    --secondary-foreground: 218 11% 65%;
+    /* Secundario (acento fuerte) */
+    --secondary: 0 36% 68%;           /* #D78289 */
+    --secondary-foreground: 0 60% 95%;/* #FADAD9 como contraste */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    /* Colores apagados */
+    --muted: 0 60% 95% / 0.7;         /* #FADAD9 con opacidad */
+    --muted-foreground: 0 36% 68% / 0.8; /* #D78289 un poco más tenue */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    /* Acentos */
+    --accent: 0 47% 79% / 0.8;        /* #E9ABAE con opacidad */
+    --accent-foreground: 0 0% 100%;   /* blanco */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    /* Colores de error/destructive */
+    --destructive: 0 70% 40%;         /* rojo oscuro derivado */
+    --destructive-foreground: 0 0% 100%; /* blanco */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Bordes, inputs y resaltados */
+    --border: 0 60% 95% / 0.5;        /* tono claro con opacidad */
+    --input: 0 60% 95% / 0.8;         /* tono claro más sólido */
+    --ring: 0 36% 68% / 0.6;          /* #D78289 más suave */
 
+    /* Radio de bordes */
     --radius: 0.5rem;
   }
 }
@@ -87,7 +97,7 @@
     @apply bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent;
   }
   .nav-active {
-    color: rgb(226 232 240) !important;
+    color: rgba(215, 130, 137, 1) !important;
     @apply text-sm lowercase tracking-tight text-slate-200;
   }
   .nav-link {

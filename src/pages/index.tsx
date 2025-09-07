@@ -28,73 +28,55 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "AI & Data Science Projects", value: "7+" },
+  { label: "Technologies", value: "10+" },
+  { label: "Contests", value: "3" },
 ];
 
 const projects = [
   {
-    title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
-  },
-  {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
+    title: "Convolutional Neural Network for Pneumonia Detection ",
+    description: " Convolutional Neural Network (CNN) inspired by the LeNet-5 architecture to classify chest X-ray images from the PneumoniaMNIST dataset.",
     image: "/assets/infinitevps.webm",
-    href: "#",
+    href: "https://github.com/hzerrweckk",
   },
   {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
+    title: "LSTM Neural Network for Financial Forecasting QQQ",
+    description: "LSTM model with a 100-day lookback window to predict 30-day ahead price movements.",
     image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
-  },
-  {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
-  },
-  {
-    title: "This website",
-    description: "My personal website",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
+    href: "https://github.com/hzerrweckk",
   },
 ];
 
 const services = [
   {
-    service: "Frontend Development",
+    service: "Quantitative Finance",
     description:
-      "Creating stellar user interfaces and web experiences using the latest technologies.",
-    icon: Code2,
-  },
-  {
-    service: "UX Design",
-    description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
-    icon: Frame,
-  },
-  {
-    service: "SEO Optimization",
-    description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
-    icon: SearchCheck,
-  },
-  {
-    service: "Responsive Design",
-    description:
-      "Designing websites that look and perform equally well on all devices and screen sizes.",
+      "Developing models for time series forecasting, financial risk analysis, and trading strategies using statistical and deep learning approaches.",
     icon: MonitorSmartphone,
   },
   {
-    service: "Backend Development",
+    service: "Machince Learning and AI",
     description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
+      "Designing, training, and deploying ML models (CNNs, LSTMs, XGBoost) for real-world problems.",
+    icon: Code2,
+  },
+  {
+    service: "Mathematical Modeling & Optimization",
+    description:
+      "Applying optimization techniques and statistical models to solve complex business and operational challenges.",
+    icon: Frame,
+  },
+  {
+    service: "Industry Collaboration Projects",
+    description:
+      "Partnering with companies (FEMSA, Arca Continental, Credifiel, John Deere) to develop data-driven and AI-powered solutions.",
+    icon: SearchCheck,
+  },
+  {
+    service: "Data Science & Analytics",
+    description:
+      "Transforming large datasets into actionable insights using Python, SQL, and advanced analytics techniques.",
     icon: Eye,
   },
 ];
@@ -190,9 +172,10 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>Python</span>
+              <span className={styles.pill}>Tensorflow</span>
+              <span className={styles.pill}>Pytorch</span>
+              <span className={styles.pill}>C++</span>
             </div>
             <div>
               <h1
@@ -201,12 +184,14 @@ export default function Home() {
                 data-scroll-speed=".06"
                 data-scroll-direction="horizontal"
               >
-                <span className="text-6xl tracking-tighter text-foreground 2xl:text-8xl">
-                  Hello, I&apos;m
+                <span className="text-6xl tracking-tighter text-foreground 2xl:text-8xl"
+  style={{ color: "#C65C69" }}
+>
+                  Hi, I&apos;m
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  Hildegard.
                 </span>
               </h1>
               <p
@@ -215,8 +200,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+                Data Science and Mathematics student who loves solving problems with data and code.
               </p>
             </div>
             <span
@@ -225,7 +209,7 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="mailto:hildegardzerrweck142005@gmail.com" passHref>
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
@@ -269,19 +253,10 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
-              <Link
-                href="https://create.t3.gg/"
-                target="_blank"
-                className="underline"
-              >
-                TypeScript, Tailwind, and Next.js
-              </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+              I&apos;m a detail-oriented Computer Science and Data Science student with foundations in algorithms and data structure.
+              Experienced in developing data-driven applications, scalable pipelines, and AI-based
+ solutions. Passionate about building reliable and distributed systems, analyzing large-scale data, and contributing to high-impact platforms. Skilled in Python and cloud technologies, with hands-on experience in
+ machine learning, deep learnind and containerized environments.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
@@ -323,11 +298,10 @@ export default function Home() {
               ✨ Projects
             </span>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
-              Streamlined digital experiences.
+              Latest projects...
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;ve worked on a variety of projects, from small websites to
-              large-scale web applications. Here are some of my favorites:
+              Here are some of my recent works focused on data science, model predictors and neural networks.
             </p>
 
             {/* Carousel */}
@@ -408,8 +382,7 @@ export default function Home() {
                   </span>
                 </h2>
                 <p className="mt-2 tracking-tighter text-secondary-foreground">
-                  Here are some of the services I offer. If you have any
-                  questions, feel free to reach out.
+                  
                 </p>
               </div>
               {services.map((service) => (
@@ -443,11 +416,10 @@ export default function Home() {
               <span className="text-gradient clash-grotesk">together.</span>
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;m currently available for freelance work and open to
-              discussing new projects.
+              
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
-              <Button className="mt-6">Get in touch</Button>
+            <Link href="mailto:hildegardzerrweck142005@gmail.com" passHref>
+              <Button className="mt-6">Send me a mail</Button>
             </Link>
           </div>
         </section>
@@ -479,8 +451,8 @@ function Gradient() {
               y2="474.645"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#7980fe" />
-              <stop offset={1} stopColor="#f0fff7" />
+              <stop stopColor="#D7828980" />
+              <stop offset={1} stopColor="#D7828980" />
             </linearGradient>
           </defs>
         </svg>
@@ -506,8 +478,8 @@ function Gradient() {
               y2="474.645"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#9A70FF" />
-              <stop offset={1} stopColor="#838aff" />
+              <stop stopColor="#D7828980" />
+              <stop offset={1} stopColor="#D7828980" />
             </linearGradient>
           </defs>
         </svg>
