@@ -11,12 +11,12 @@
     --foreground: 0 0% 100%;          /* blanco puro */
 
     /* Tarjetas */
-    --card: 0 47% 79%;                /* #E9ABAE */
-    --card-foreground: 0 0% 100%;     /* blanco */
+    --card: 338 12% 46%;                /* #E9ABAE */
+    --card-foreground: 338 12% 46%;     /* blanco */
 
     /* Popovers (ventanas flotantes) */
-    --popover: 0 36% 68%;             /* #D78289 */
-    --popover-foreground: 0 0% 100%;  /* blanco */
+    --popover: 338 12% 46%;             /* #D78289 */
+    --popover-foreground: 338 12% 46%;  /* blanco */
 
     /* Colores principales */
     --primary: 0 47% 79%;             /* #E9ABAE */

@@ -239,7 +239,7 @@ export default function Home() {
             className="mt-14 h-full w-full xl:mt-0"
           >
             <Suspense fallback={<span>Loading...</span>}>
-              <Spline scene="/assets/scene.splinecode" />
+              <img src="/assets/flor.jpg" alt="3D Scene" style={{ width: "100%", height: "auto" }} />
             </Suspense>
           </div>
         </section>
@@ -252,7 +252,7 @@ export default function Home() {
             data-scroll-position="top"
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
-            <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
+            <h2 className="py-16 pb-2 text-3xl font-light leading-normal tracking-tighter text-[#836871] xl:text-[40px]">
               I&apos;m a detail-oriented Computer Science and Data Science student with foundations in algorithms and data structure.
               Experienced in developing data-driven applications, scalable pipelines, and AI-based
  solutions. Passionate about building reliable and distributed systems, analyzing large-scale data, and contributing to high-impact platforms. Skilled in Python and cloud technologies, with hands-on experience in
@@ -297,11 +297,11 @@ export default function Home() {
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
               ✨ Projects
             </span>
-            <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
+            <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter text-[#C65C69] xl:text-6xl">
               Latest projects...
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              Here are some of my recent works focused on data science, model predictors and neural networks.
+              Here are some of my recent works.
             </p>
 
             {/* Carousel */}
@@ -374,7 +374,7 @@ export default function Home() {
               className="grid items-center gap-1.5 md:grid-cols-2 xl:grid-cols-3"
             >
               <div className="flex flex-col py-6 xl:p-6">
-                <h2 className="text-4xl font-medium tracking-tight">
+                <h2 className="text-4xl font-medium tracking-tight text-[#C65C69]">
                   Need more info?
                   <br />
                   <span className="text-gradient clash-grotesk tracking-normal">
@@ -391,10 +391,10 @@ export default function Home() {
                   className="flex flex-col items-start rounded-md bg-white/5 p-14 shadow-md backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-md"
                 >
                   <service.icon className="my-6 text-primary" size={20} />
-                  <span className="text-lg tracking-tight text-foreground">
+                  <span className="text-lg tracking-tight text-[#C65C69]">
                     {service.service}
                   </span>
-                  <span className="mt-2 tracking-tighter text-muted-foreground">
+                  <span className="mt-2 tracking-tighter text-[#836871]">
                     {service.description}
                   </span>
                 </div>
@@ -411,7 +411,7 @@ export default function Home() {
             data-scroll-position="top"
             className="flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-primary/[6.5%] to-white/5 px-8 py-16 text-center xl:py-24"
           >
-            <h2 className="text-4xl font-medium tracking-tighter xl:text-6xl">
+            <h2 className="text-4xl font-medium tracking-tighter text-[#C65C69] xl:text-6xl">
               Let&apos;s work{" "}
               <span className="text-gradient clash-grotesk">together.</span>
             </h2>
